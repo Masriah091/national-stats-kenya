@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data &amp; Sources — Kenya in Numbers</title>
+<meta name="description" content="Every source behind Kenya in Numbers, with year and methodology.">
+<link rel="stylesheet" href="styles.css">
+<script src="data.js" defer></script>
+<script src="charts.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body data-page="data">
+<header class="site">
+  <div class="wrap">
+    <div class="brand">
+      <h1><span class="flag">🇰🇪</span> Kenya in Numbers</h1>
+      <span class="tag">A national statistics portal — every figure sourced, every year shown</span>
+    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <a data-nav="home" href="index.html">Home</a>
+      <a data-nav="population" href="population.html">Population</a>
+      <a data-nav="economy" href="economy.html">Economy</a>
+      <a data-nav="regions" href="regions.html">Counties &amp; Climate</a>
+      <a data-nav="data" href="data.html">Data &amp; Sources</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>Data &amp; Sources</h2>
+    <p class="lede">Nothing on this site is invented. Every number names the institution that published it
+    and the year it describes. Where two respected sources disagree (for example the Central Bank's
+    agent-based mobile-money total versus Safaricom's platform total), both are shown and the difference is explained.</p>
+  </section>
+
+  <section class="card">
+    <h3>Sources</h3>
+    <ul class="facts" id="source-list"></ul>
+  </section>
+
+  <section class="grid-2-even">
+    <article class="card">
+      <h3>Methodology</h3>
+      <ul class="facts">
+        <li><strong>Census vs estimate:</strong> 2009 and 2019 population figures are census counts (KNBS). 2023–2024 population figures are World Bank estimates.</li>
+        <li><strong>Money:</strong> GDP is shown both in current US dollars (World Bank) and in Kenyan shillings at current prices (KNBS). Dollar figures move with the exchange rate as well as with output.</li>
+        <li><strong>Crops:</strong> tea and coffee are reported for crop years where the source says so; tonnages are "made tea" (processed), not green leaf.</li>
+        <li><strong>Mobile money:</strong> the Central Bank total counts transactions through agents; Safaricom's total counts every transaction on the M-Pesa platform. They measure different things.</li>
+        <li><strong>Climate:</strong> station figures are long-term means, not a single year's weather. A single year can differ sharply from the mean.</li>
+        <li><strong>Derived figures:</strong> the 15–64 age share (60.2%) is the arithmetic residual of the two published World Bank shares (0–14: 36.8%; 65+: 3.0%).</li>
+        <li><strong>What is left out:</strong> county rainfall is shown only for Nairobi and Mombasa, where a published station mean was found. No county figure was estimated or filled in.</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h3>About this site</h3>
+      <p><strong>Kenya in Numbers</strong> is an independent statistics portal built for the MakeFun
+      "Best National Statistics Site" bounty. It is not affiliated with the Kenya National Bureau of
+      Statistics, the Central Bank of Kenya, Safaricom, or any government body.</p>
+      <p>It runs entirely offline: static HTML, CSS and JavaScript, system fonts only, no external
+      requests, no tracking. All charts are drawn in the browser from the figures in <code>data.js</code>.</p>
+      <p>Figures were checked against their published sources on 26 November 2026. If a source revises a
+      figure, the number on this site becomes out of date — check the source list above for the publisher
+      and year behind any number you quote.</p>
+      <p><a href="index.html">← Back to the home page</a></p>
+    </article>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p><strong>Kenya in Numbers</strong> — an independent statistics portal. Not affiliated with the
+    Kenya National Bureau of Statistics or any government body. All figures carry their source and year.
+    Figures updated 26 November 2026.</p>
+  </div>
+</footer>
+</body>
+</html>

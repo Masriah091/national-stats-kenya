@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Economy — Kenya in Numbers</title>
+<meta name="description" content="Kenya's economy: GDP, growth, sector shares, tea and coffee production, and M-Pesa mobile money, all sourced.">
+<link rel="stylesheet" href="styles.css">
+<script src="data.js" defer></script>
+<script src="charts.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body data-page="economy">
+<header class="site">
+  <div class="wrap">
+    <div class="brand">
+      <h1><span class="flag">🇰🇪</span> Kenya in Numbers</h1>
+      <span class="tag">A national statistics portal — every figure sourced, every year shown</span>
+    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <a data-nav="home" href="index.html">Home</a>
+      <a data-nav="population" href="population.html">Population</a>
+      <a data-nav="economy" href="economy.html">Economy</a>
+      <a data-nav="regions" href="regions.html">Counties &amp; Climate</a>
+      <a data-nav="data" href="data.html">Data &amp; Sources</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section aria-label="Key indicators">
+    <h2>Economy</h2>
+    <p class="lede">A $120.34 billion economy in 2024 that grew 4.7% in real terms — slower than 2023's 5.7%,
+    carried by services, agriculture and a mobile-money system that now moves KSh 8.7 trillion a year.</p>
+    <div class="kpi-grid"></div>
+  </section>
+
+  <div class="tabs" role="tablist" aria-label="Economy sections">
+    <button data-tab="growth" class="active" aria-selected="true">Growth &amp; structure</button>
+    <button data-tab="crops" aria-selected="false">Agriculture</button>
+    <button data-tab="money" aria-selected="false">Mobile money</button>
+  </div>
+
+  <section data-panel="growth">
+    <div class="grid-2">
+      <article class="card">
+        <h3>Real GDP growth, 2021–2024</h3>
+        <div class="chart-box" id="gdp-growth-chart"></div>
+        <p class="src">Source: KNBS Economic Survey cycle (2025 survey: 4.7% in 2024, 5.7% in 2023).</p>
+      </article>
+      <article class="card">
+        <h3>Share of GDP, 2024</h3>
+        <div class="chart-box" id="sector-chart"></div>
+        <p class="src">Source: KNBS Economic Survey 2025. Other sectors: 5.8%.</p>
+      </article>
+    </div>
+    <article class="card" style="margin-top:16px">
+      <h3>GDP in numbers</h3>
+      <ul class="facts" id="gdp-levels"></ul>
+    </article>
+  </section>
+
+  <section data-panel="crops" hidden>
+    <article class="card">
+      <h3>Crop production, 2023 vs 2024 — click a column heading to sort</h3>
+      <p class="muted">KNBS Economic Survey 2025. Sugarcane jumped 68.7% on better cane deliveries; maize fell 6.1%.</p>
+      <div class="table-wrap">
+        <table class="sortable" id="crop-table">
+          <thead><tr>
+            <th data-sort="crop">Crop</th>
+            <th>Unit</th>
+            <th data-sort="y2023">2023</th>
+            <th data-sort="y2024">2024</th>
+            <th data-sort="change">Change</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <ul class="facts">
+        <li><strong>Tea exports, 2024:</strong> 594,500 tonnes earning KSh 181.69 billion (≈ $1.4bn). <span class="muted">(Tea Board of Kenya)</span></li>
+        <li><strong>Coffee export earnings, 2023/24:</strong> KSh 37.7 billion. <span class="muted">(Agriculture and Food Authority, Coffee Yearbook 2023/24)</span></li>
+        <li><strong>Agriculture GDP, 2024:</strong> KSh 3.6 trillion — 22.5% of the whole economy. <span class="muted">(KNBS Economic Survey 2025)</span></li>
+      </ul>
+    </article>
+  </section>
+
+  <section data-panel="money" hidden>
+    <div class="grid-2">
+      <article class="card">
+        <h3>Mobile money keeps growing</h3>
+        <p class="muted">Value moved through agents, KSh trillion (Central Bank of Kenya).</p>
+        <div class="chart-box" id="mm-chart"></div>
+        <p class="src">2024: KSh 8.7 trillion, up 9.4% from KSh 7.95 trillion in 2023. About KSh 21 billion a day.</p>
+      </article>
+      <article class="card">
+        <h3>M-Pesa and the mobile-money economy</h3>
+        <ul class="facts" id="mm-facts"></ul>
+        <p class="src">The CBK figure counts transactions through agents; Safaricom's FY2025 figure counts every transaction on the M-Pesa platform — the two are different measures, not a contradiction.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p><strong>Kenya in Numbers</strong> — an independent statistics portal. Not affiliated with the
+    Kenya National Bureau of Statistics or any government body. All figures carry their source and year;
+    see <a href="data.html">Data &amp; Sources</a> for the full list and methodology. Figures updated 26 November 2026.</p>
+  </div>
+</footer>
+</body>
+</html>

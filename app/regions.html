@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Counties &amp; Climate — Kenya in Numbers</title>
+<meta name="description" content="Kenya's 47 counties: population, leading products and climate station data for Nairobi, Mombasa and more.">
+<link rel="stylesheet" href="styles.css">
+<script src="data.js" defer></script>
+<script src="charts.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body data-page="regions">
+<header class="site">
+  <div class="wrap">
+    <div class="brand">
+      <h1><span class="flag">🇰🇪</span> Kenya in Numbers</h1>
+      <span class="tag">A national statistics portal — every figure sourced, every year shown</span>
+    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <a data-nav="home" href="index.html">Home</a>
+      <a data-nav="population" href="population.html">Population</a>
+      <a data-nav="economy" href="economy.html">Economy</a>
+      <a data-nav="regions" href="regions.html">Counties &amp; Climate</a>
+      <a data-nav="data" href="data.html">Data &amp; Sources</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section aria-label="Key indicators">
+    <h2>Counties &amp; Climate</h2>
+    <p class="lede">47 counties under the 2010 constitution, from Nairobi's 4.4 million people to Lamu's 143,920 —
+    and a climate that runs from 250 mm of rain a year in the arid north to 2,500 mm in the wet highlands.</p>
+    <div class="kpi-grid"></div>
+  </section>
+
+  <section class="grid-2">
+    <article class="card">
+      <h3>Largest counties, 2019 census</h3>
+      <div class="chart-box" id="county-pop-chart"></div>
+      <p class="src">Source: KNBS 2019 census. Millions of people.</p>
+    </article>
+    <article class="card">
+      <h3>Climate in brief</h3>
+      <ul class="facts" id="climate-facts"></ul>
+      <p class="src">Rain falls in two seasons — the long rains (March–May) and the short rains (October–December) — with the coast wettest in May.</p>
+    </article>
+  </section>
+
+  <section class="card">
+    <h3>Counties — search and sort</h3>
+    <div class="table-tools">
+      <label>Filter counties: <input type="search" data-filter-for="region-table" placeholder="Type a county, zone or product…" aria-label="Filter counties"></label>
+      <span class="muted" data-filter-count>12 of 12 rows shown</span>
+    </div>
+    <p class="muted">Click a column heading to sort. Population: 2019 census (KNBS). Density shown only where the census publishes it.</p>
+    <div class="table-wrap">
+      <table class="sortable" id="region-table">
+        <thead><tr>
+          <th data-sort="rank">#</th>
+          <th data-sort="name">County</th>
+          <th data-sort="pop">Population (2019)</th>
+          <th data-sort="density">Density (per km²)</th>
+          <th>Zone</th>
+          <th>Leading product / activity</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card">
+    <h3>Climate stations — click a column heading to sort</h3>
+    <p class="muted">Long-term station means (Kenya Meteorological Department / University of Nairobi climatology). Rainfall shown only where the station mean is published in the sources consulted.</p>
+    <div class="table-wrap">
+      <table class="sortable" id="climate-table">
+        <thead><tr>
+          <th>Station</th>
+          <th data-sort="elev">Elevation</th>
+          <th data-sort="rain">Mean annual rain</th>
+          <th data-sort="max">Mean max temp</th>
+          <th data-sort="min">Mean min temp</th>
+          <th>Note</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p><strong>Kenya in Numbers</strong> — an independent statistics portal. Not affiliated with the
+    Kenya National Bureau of Statistics or any government body. All figures carry their source and year;
+    see <a href="data.html">Data &amp; Sources</a> for the full list and methodology. Figures updated 26 November 2026.</p>
+  </div>
+</footer>
+</body>
+</html>

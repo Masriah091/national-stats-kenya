@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kenya in Numbers — National Statistics Portal</title>
+<meta name="description" content="Kenya in Numbers: real, sourced statistics on Kenya's people, economy, agriculture, mobile money, counties and climate.">
+<link rel="stylesheet" href="styles.css">
+<script src="data.js" defer></script>
+<script src="charts.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body data-page="home">
+<header class="site">
+  <div class="wrap">
+    <div class="brand">
+      <h1><span class="flag">🇰🇪</span> Kenya in Numbers</h1>
+      <span class="tag">A national statistics portal — every figure sourced, every year shown</span>
+    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <a data-nav="home" href="index.html">Home</a>
+      <a data-nav="population" href="population.html">Population</a>
+      <a data-nav="economy" href="economy.html">Economy</a>
+      <a data-nav="regions" href="regions.html">Counties &amp; Climate</a>
+      <a data-nav="data" href="data.html">Data &amp; Sources</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section aria-label="Key indicators">
+    <h2>Kenya at a glance</h2>
+    <p class="lede">56.4 million people, a $120 billion economy, the world's tea trade and a
+    mobile-money system that moves more than half of GDP every year — measured, not guessed.</p>
+    <div class="kpi-grid"></div>
+  </section>
+
+  <section class="grid-2">
+    <article class="card">
+      <h3>Population keeps climbing</h3>
+      <p class="muted">Census counts (2009, 2019) and World Bank estimates (2023, 2024), millions of people.</p>
+      <div class="chart-box" id="hero-pop-chart"></div>
+      <p class="src">Source: KNBS 2019 census; World Bank World Development Indicators 2024. Full detail on the <a href="population.html">Population</a> page.</p>
+    </article>
+    <article class="card">
+      <h3>What the economy is made of</h3>
+      <p class="muted">Share of GDP by sector, 2024.</p>
+      <div class="chart-box" id="home-sector-chart"></div>
+      <p class="src">Source: KNBS Economic Survey 2025. Services 55.3%, agriculture 22.5%, industry 16.5%.</p>
+    </article>
+  </section>
+
+  <section class="grid-2-even">
+    <article class="card">
+      <h3>Biggest counties</h3>
+      <p class="muted">By the 2019 census — Nairobi alone holds 4.4 million people.</p>
+      <ol class="top5" id="home-county-list"></ol>
+      <p><a href="population.html">See all 12 largest counties &amp; sort the table →</a></p>
+    </article>
+    <article class="card">
+      <h3>Three numbers that explain Kenya</h3>
+      <ul class="facts">
+        <li><strong>Tea:</strong> 598,500 tonnes of made tea in 2024 — exports earned KSh 181.69 billion. <span class="muted">(KNBS / Tea Board of Kenya)</span></li>
+        <li><strong>Mobile money:</strong> KSh 8.7 trillion moved in 2024; 82.3% of adults use it. <span class="muted">(Central Bank of Kenya)</span></li>
+        <li><strong>Youth:</strong> 36.8% of the population is under 15; median age 20.8. <span class="muted">(World Bank, 2024)</span></li>
+      </ul>
+      <p><a href="economy.html">Economy: GDP, crops &amp; mobile money →</a></p>
+    </article>
+  </section>
+
+  <section class="strip" aria-label="Headline figures">
+    <div><b>47</b><span>counties</span></div>
+    <div><b>63.8 yrs</b><span>life expectancy, 2024</span></div>
+    <div><b>31.9%</b><span>urban, 2024</span></div>
+    <div><b>879 mm</b><span>Nairobi mean annual rain</span></div>
+    <div><b>1,204 mm</b><span>Mombasa mean annual rain</span></div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p><strong>Kenya in Numbers</strong> — an independent statistics portal. Not affiliated with the
+    Kenya National Bureau of Statistics or any government body. All figures carry their source and year;
+    see <a href="data.html">Data &amp; Sources</a> for the full list and methodology. Figures updated 26 November 2026.</p>
+  </div>
+</footer>
+</body>
+</html>

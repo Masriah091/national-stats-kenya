@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Population — Kenya in Numbers</title>
+<meta name="description" content="Kenya's population: census counts, growth, age structure and the 12 largest counties, all sourced.">
+<link rel="stylesheet" href="styles.css">
+<script src="data.js" defer></script>
+<script src="charts.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body data-page="population">
+<header class="site">
+  <div class="wrap">
+    <div class="brand">
+      <h1><span class="flag">🇰🇪</span> Kenya in Numbers</h1>
+      <span class="tag">A national statistics portal — every figure sourced, every year shown</span>
+    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <a data-nav="home" href="index.html">Home</a>
+      <a data-nav="population" href="population.html">Population</a>
+      <a data-nav="economy" href="economy.html">Economy</a>
+      <a data-nav="regions" href="regions.html">Counties &amp; Climate</a>
+      <a data-nav="data" href="data.html">Data &amp; Sources</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section aria-label="Key indicators">
+    <h2>Population</h2>
+    <p class="lede">From 38.6 million in the 2009 census to 56.4 million in 2024 — Kenya added roughly
+    18 million people in fifteen years, and more than a third of them are children.</p>
+    <div class="kpi-grid"></div>
+  </section>
+
+  <section class="grid-2">
+    <article class="card">
+      <h3>Population trend, 2009–2024</h3>
+      <div class="chart-box" id="pop-trend-chart"></div>
+      <p class="src">Source: KNBS censuses 2009 &amp; 2019; World Bank estimates 2023 &amp; 2024. Census counts are exact; later years are estimates.</p>
+    </article>
+    <article class="card">
+      <h3>A young country</h3>
+      <p class="muted">Age structure, 2024, percent of population. The 15–64 share is the residual of the two published shares.</p>
+      <div class="chart-box" id="pop-age-chart"></div>
+      <p class="src">Source: World Bank World Development Indicators 2024.</p>
+    </article>
+  </section>
+
+  <section class="card">
+    <h3>Largest counties — click a column heading to sort</h3>
+    <p class="muted">2019 Kenya Population and Housing Census (KNBS). Density is shown only where the census volume publishes it.</p>
+    <div class="table-wrap">
+      <table class="sortable" id="county-table">
+        <thead><tr>
+          <th data-sort="rank">#</th>
+          <th data-sort="name">County</th>
+          <th data-sort="pop">Population (2019)</th>
+          <th data-sort="density">Density (per km²)</th>
+          <th>Capital</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="src">Nairobi is the most populous county (4,397,073) and Lamu the least (143,920) in the 2019 census.</p>
+  </section>
+
+  <section class="card">
+    <h3>Population in detail</h3>
+    <ul class="facts" id="pop-facts"></ul>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p><strong>Kenya in Numbers</strong> — an independent statistics portal. Not affiliated with the
+    Kenya National Bureau of Statistics or any government body. All figures carry their source and year;
+    see <a href="data.html">Data &amp; Sources</a> for the full list and methodology. Figures updated 26 November 2026.</p>
+  </div>
+</footer>
+</body>
+</html>
